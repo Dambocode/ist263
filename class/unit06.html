@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Demo</title>
+    <!--This is the tag for CSS, it goes in the head because its metadata-->
+   <style> 
+    /*"p" is our selector, color is the property that you want to change, and "lightseagreen" is our value*/
+
+    /* Below we have a grouped selector*/
+        p, li {
+            color:lightseagreen; /*The declaration is color: lightseagreen*/
+            font-size: 1.3em; /*1em is the default font size. Changing the em from 1 to 2 will double its size. em is all proportional*/
+            /* to do the same thing with % fontsize: 200%; */
+            font-family:'Times New Roman', Times, serif; /*This will search the users computer for the fonts in the listed order*/
+
+            /*You can find different formatting properties on W3 Schools or on the web!*/
+        }
+        /* Below we have an element selector*/
+        body {
+            color: rgb(104, 104, 224);
+        }
+        
+        /* Only a tags inside p tags will be green*/
+        p a {
+            color: green;
+        }
+        #firstp {
+            color: indigo;
+        }
+        .thirdp {
+            color: yellow
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <!--ID Values must be unique-->
+    <p id="firstp">
+        Lorem ipsum
+    </p>
+
+
+    <p>
+        Second Paragraph <br> <a href="https://www.google.com/">Google</a>
+    </p>
+
+    <!--Class attributes can be used over and over again-->
+    <p class="thirdp">
+        Third Paragraph
+    </p>
+    <ul>
+        <li>My List Item</li>
+        <li><a href="https://www.google.com/">Google</a></li>
+    </ul>
+</body>
+</html>
