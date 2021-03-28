@@ -1,0 +1,46 @@
+
+
+body {
+    font-family: cursive;
+}
+
+h1, h2 {
+    color: orange;
+}
+
+h1 {
+    font-size: 3em;
+    color: #7868e6;
+}
+h2 {
+    font-size: 2em;
+    color: #7868e6;
+}
+
+a:hover {
+    color: orange;
+}
+
+body {
+    background-color: #e4fbff
+}
+
+p {
+    background-color:#d3e0ea;
+    padding: 20px;
+    margin: 50px;
+    border:5px solid #b8b5ff;
+}
+
+nav {
+    background-color: #b8b5ff;
+}
+nav a {
+    color: #e4fbff;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a:hover {
+    background-color: #7868e6;
+}
