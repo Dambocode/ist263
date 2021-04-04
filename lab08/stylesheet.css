@@ -53,10 +53,12 @@ nav a:hover {
 
 .address {
     flex: 1;
+    color: #e4fbff;
 }
 
 .social-media {
     flex: 1;
+    color: #e4fbff;
 }
 
 
@@ -71,10 +73,12 @@ nav a:hover {
 .contact-form, .google-map-embed {
     padding: 20px;
     margin: 10px;
+    color: #e4fbff;
 }
 
 .contact-form {
     flex: 1;
+    color: #e4fbff;
 
 }
 
