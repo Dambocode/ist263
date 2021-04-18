@@ -11,7 +11,7 @@ h2 {
     font-size: 2em;
     color: black;
 }
-.mailing-list {
+h2 > .mailing-list {
     color:black;
 }
 
