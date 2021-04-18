@@ -11,6 +11,9 @@ h2 {
     font-size: 2em;
     color: black;
 }
+.mailing-list {
+    color:black;
+}
 
 a:hover {
     color: orange;
