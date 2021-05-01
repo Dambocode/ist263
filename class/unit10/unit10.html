@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 10 Accessibility</title>
+    <style>
+        #skip-button {
+            position: absolute;
+            /* Position based on top left of viewport */
+            left: -999px;
+            /* Means element is off screen */
+        }
+        
+        #skip-button:focus {
+            position: absolute;
+            left: 10px;
+            background-color: grey;
+            border: 2px black;
+        }
+        /* When the item is tabbed to (in focus) */
+    </style>
+</head>
+
+<body>
+    <h1>Unit 10 Notes</h1>
+    <!-- Headings need to be hierartical -->
+    <img src="../../images/LI-In-Bug-Resized.png" alt="SU Logo">
+    <!-- If the alt="" is empty, the screen reader will skip this image -->
+
+    <a id="skip-button" href="#maincontent">Skip to page content</a>
+
+
+    <a href="https:\\www.google.com" tabindex="2">Google</a>
+    <a href="https:\\www.amazon.com" tabindex="3">Amazon</a>
+    <a href="https:\\www.twitter.com" tabindex="1">Twitter</a>
+    <!-- Changes the order of the tab nav -->
+
+    <a id="maincontent">Main Content</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam amet reiciendis earum assumenda asperiores, error, quibusdam atque saepe quisquam rerum ab nesciunt impedit? Quos, vero. Maxime quasi provident impedit.</p>
+</body>
+
+</html>

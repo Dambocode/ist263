@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Finds the element by id and changes the value of an attribute, in this case the attribute id is "rightanswer" 
+        function correct() {
+            document.getElementByID("rightanswer").innerHTML = "This is correct.";
+        }
+
+        // This changes the image when you hover over it
+        function changeimage() {
+            document.getElementById("rollover").setAttribute('src', 'https://laferger.github.io/ist263/images/arrow_over.PNG')
+        }
+
+        // This reverts the change in the image when you hover off of it
+        function changeback() {
+            document.getElementById("rollover").setAttribute('src', 'https://laferger.github.io/ist263/images/arrow.PNG')
+        }
+
+        // On the top we are locating the element that we want to change the style on
+        // On the bottom we are locating the value of the form that holds the hex color vlaue
+        function changebgcolor() {
+            document.getElementById("page-color").style.backgroundColor =
+                document.getElementById("cp").value;
+        }
+    </script>
+</head>
+
+<body id="page-color">
+    <!-- page-color is the selector we will use to assign background color -->
+    <p>
+        Javascript is the only programming language that runs in your browser
+    </p>
+
+    <span id="rightanswer" onclick="correct();">
+        True
+    </span><br>
+
+    <span id="wronganswer">
+        False
+    </span><br><br><br><br><br>
+
+    <img id="rollover" src="https://laferger.github.io/ist263/images/arrow.PNG" onmouseover="changeimage();" onmouseout="changeback();">
+
+    <form>
+        <input type="color" id="cp" onchange="changebgcolor();">
+    </form>
+</body>
+
+</html>
