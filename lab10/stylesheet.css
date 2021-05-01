@@ -1,34 +1,35 @@
-
-
 body {
     font-family: cursive;
 }
-
-
 
 h1 {
     font-size: 3em;
     color: #7868e6;
 }
+
 h2 {
     font-size: 2em;
-    color: #e4fbff;
+    color: black;
+}
+h2 > .mailing-list {
+    color:black;
 }
 
 a:hover {
     color: orange;
 }
 
+
 body {
     background-color: #e4fbff
 }
 
-
 nav {
     background-color: #b8b5ff;
 }
+
 nav a {
-    color: #e4fbff;
+    color: black;
     padding: 10px;
     margin-bottom: 30px;
 }
@@ -42,6 +43,7 @@ nav a:hover {
     margin-left: 10px;
     color: #7868e6;
 }
+
 .block-1 {
     display: flex;
     background-color: #7868e6;
@@ -61,7 +63,12 @@ nav a:hover {
     color: #e4fbff;
 }
 
-
+#content-section {
+    color: black;
+}
+.address {
+    color: black;
+}
 .block-2 {
     display: flex;
     background-color: #7868e6;
@@ -70,18 +77,42 @@ nav a:hover {
     margin: 5px;
     padding: 20px;
 }
-.contact-form, .google-map-embed {
+
+.contact-form,
+.google-map-embed {
     padding: 20px;
     margin: 10px;
-    color: #e4fbff;
+    color: black;
 }
 
 .contact-form {
     flex: 1;
     color: #e4fbff;
-
 }
 
 .google-map-embed {
     flex: 2;
+}
+
+.Banner-Image {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .navclass {
+        width: 100%;
+        display: block;
+        margin: 10px 10px 10px 10px;
+    }
+    nav span {
+        display: none;
+    }
+}
+
+.navclass {
+    color: #b8b5ff;
+}
+
+.navclass:hover {
+    background-color: #7868e6;
 }
