@@ -1,3 +1,26 @@
+
+
+    nav {
+        background-color: #026670;
+        padding: 15px 10px;
+    }
+    nav a {
+        color: #edeae5;
+        font-size: 1.15em;
+        margin: 10px 15px;
+        width: 100%;
+        display: block;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+
+
+
+
 body {
     background-color: #c0c0c0;
 }
@@ -118,4 +141,10 @@ img {
     font-size: 2em;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media only screen and (min-width: 992px) {
+    nav a {
+        display: inline;
+    }
 }
