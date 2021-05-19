@@ -148,3 +148,26 @@ img {
         display: inline;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+#listing-1, #listing-2, #listing-3 {
+    display: flex;
+    background-color: black;
+    border-radius: 10px;
+
+    margin: 10px 0 0 10px;
+    width: 100%;
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+}
