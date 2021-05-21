@@ -1,25 +1,22 @@
+nav {
+    background-color: black;
+    padding: 15px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
+nav a {
+    color: #edeae5;
+    font-size: 1.15em;
+    margin: 10px 15px;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
 
-    nav {
-        background-color: #026670;
-        padding: 15px 10px;
-    }
-    nav a {
-        color: #edeae5;
-        font-size: 1.15em;
-        margin: 10px 15px;
-        width: 100%;
-        display: block;
-        text-decoration: none;
-    }
-    nav a:hover {
-        color: white;
-        text-decoration: underline;
-    }
-
-
-
-
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
 
 body {
     background-color: #c0c0c0;
@@ -30,15 +27,20 @@ body {
     font-size: 1em;
 }
 
-#product-1:hover, #product-2:hover, #product-3:hover, #product-4:hover {
+#product-1:hover,
+#product-2:hover,
+#product-3:hover,
+#product-4:hover {
     font-size: 105%;
 }
 
-#product-1, #product-2, #product-3, #product-4 {
+#product-1,
+#product-2,
+#product-3,
+#product-4 {
     display: flex;
     background-color: black;
     border-radius: 10px;
-
     margin: 10px 0 0 10px;
     width: 100%;
     padding: 10px
@@ -63,10 +65,12 @@ body {
     justify-content: space-evenly;
     width: 50%
 }
+
 img {
     max-width: 100%;
     height: auto;
-  }
+}
+
 .product-title {
     font-size: 100%;
     color: white;
@@ -143,28 +147,18 @@ img {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 481px) {
     nav a {
         display: inline;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-#listing-1, #listing-2, #listing-3 {
+#listing-1,
+#listing-2,
+#listing-3 {
     display: flex;
     background-color: black;
     border-radius: 10px;
-
     margin: 10px 0 0 10px;
     width: 100%;
     padding: 10px;
