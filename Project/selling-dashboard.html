@@ -10,10 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <title>Selling Dashboard</title>
+    <script>
+        function chBackcolor(color) {
+            document.body.style.background = color;
+        }
+    </script>
 </head>
 
 <body>
-
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <!-- Navigation Bar -->
     <div id="nav-bar">
         <nav>
@@ -21,56 +26,70 @@
             <a href="index.html" id="about-button">About Us</a>
             <a href="index.html" id="faq-button">FAQ</a>
             <a href="index.html" id="help-button">Help</a>
-            <a href="selling-dashboard.html" id="dashboard-button">Selling Dashboard</a>
+            <a id=dashboard href="selling-dashboard.html" id="dashboard-button">Selling Dashboard</a>
+            <input id="light-mode" type="button" onclick="chBackcolor('white');" value="Light Mode">
         </nav>
     </div>
 
 
     <h1>Selling Dashboard</h1>
     <h2 id="listed-items">Listed Items</h2>
-    <!-- Listed / Sold Products -->
-    <div class="listed-products">
 
-        <!-- Listing 1 -->
-        <div id="listing-1">
-            <a href="product-1.html">
-                <img src="Images/Alex_Rodriguez_1994_Upper_Deck_SP_Rookie_Foil_15.PNG"
-                    alt="Alex Rodriguez 1994 Upper Deck SP Rookie Foil 15">
-                <p class="listing-title">
-                    Alex Rodriguez 1994 Upper Deck SP Rookie Foil 15 - PSA 9
-                </p>
-                <p class="listing-price">
-                    $575
-                </p>
-            </a>
+    <div class="container">
+
+
+        <!-- Listed / Sold Products -->
+        <div class="listed-products">
+            <!-- Listing 1 -->
+            <div class="product">
+                <a href="product-1.html">
+                    <img src="Images/Alex_Rodriguez_1994_Upper_Deck_SP_Rookie_Foil_15.PNG"
+                        alt="Alex Rodriguez 1994 Upper Deck SP Rookie Foil 15">
+                    <p class="listing-title">
+                        Alex Rodriguez 1994 Upper Deck SP Rookie Foil 15 - PSA 9
+                    </p>
+                    <p class="listing-price">
+                        $575
+                    </p>
+                </a>
+            </div>
+
+            <!-- Listing 2 -->
+            <div class="product">
+                <a href="product-1.html">
+                    <img src="Images/2020-21-Panini-NBA-Hoops-Basketball-Mega-Box-144-Cards_500x500.png"
+                        alt="2020-21 Panini NBA Hoops Basketball Mega Box">
+                    <p class="listing-title">
+                        2020-21 Panini NBA Hoops Basketball Mega Box
+                    </p>
+                    <p class="listing-price">
+                        $145
+                    </p>
+                </a>
+            </div>
+
+            <!-- Listing 3 -->
+            <div class="product">
+                <a href="product-1.html">
+                    <img src="Images/2019-20-Panini-Prizm-Basketball-FOTL-Premium-Edition-Box_500x500.jpg"
+                        alt="Panini Prizm 2019-20 Panini Prizm Basketball First Off the Line Premium Edition Box">
+                    <p class="listing-title">
+                        Panini Prizm 2019-20 Basketball FOTL Premium Edition Box
+                    </p>
+                    <p class="listing-price">
+                        $3500
+                    </p>
+                </a>
+            </div>
         </div>
-
-        <!-- Listing 2 -->
-        <div id="listing-2">
-            <a href="product-1.html">
-                <img src="Images/2020-21-Panini-NBA-Hoops-Basketball-Mega-Box-144-Cards_500x500.png"
-                    alt="2020-21 Panini NBA Hoops Basketball Mega Box">
-                <p class="listing-title">
-                    2020-21 Panini NBA Hoops Basketball Mega Box
-                </p>
-                <p class="listing-price">
-                    $145
-                </p>
-            </a>
-        </div>
-
-        <!-- Listing 3 -->
-        <div id="listing-3">
-            <a href="product-1.html">
-                <img src="Images/2019-20-Panini-Prizm-Basketball-FOTL-Premium-Edition-Box_500x500.jpg"
-                    alt="Panini Prizm 2019-20 Panini Prizm Basketball First Off the Line Premium Edition Box">
-                <p class="listing-title">
-                    Panini Prizm 2019-20 Basketball FOTL Premium Edition Box
-                </p>
-                <p class="listing-price">
-                    $3500
-                </p>
-            </a>
+        <div class="sales-stats">
+            <div id="sales-text">
+                Number of Sales: 31<br>
+                Total Revenue: $10,520
+            </div>
+            <div id="sales-graph">
+                <img src="Images/sales-graph.PNG" alt="Sale chart">
+            </div>
         </div>
     </div>
 

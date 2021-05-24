@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <title>Home Page</title>
+    <script>
+        function chBackcolor(color) {
+            document.body.style.background = color;
+        }
+    </script>
 </head>
 
 <body>
@@ -20,17 +25,18 @@
             <a href="index.html" id="faq-button">FAQ</a>
             <a href="index.html" id="help-button">Help</a>
             <a id=dashboard href="selling-dashboard.html" id="dashboard-button">Selling Dashboard</a>
+            <input id="light-mode" type="button" onclick="chBackcolor('white');" value="Light Mode">
         </nav>
     </div>
 
     <h1>Browse some of our products below</h1>
 
     <!-- Start of Product Category 1 -->
-
+    
     <h2 class="category-title">NBA</h2><br>
     <div class="product-category-1">
         <!-- Product 1 -->
-        <div id="product-1">
+        <div class="product">
             <a href="product-1.html">
                 <img class="product-image" src="Images/2019-20-Panini-Prizm-Basketball-FOTL-Premium-Edition-Box_500x500.jpg" alt="Panini Prizm 2019-20 Panini Prizm Basketball First Off the Line Premium Edition Box">
                 <p class="product-title">
@@ -46,7 +52,7 @@
         </div>
 
         <!-- Product 2 -->
-        <div id="product-2">
+        <div class="product">
             <a href="product-1.html">
                 <img class="product-image" src="Images/2020-21-Panini-NBA-Hoops-Basketball-Mega-Box-144-Cards_500x500.png" alt="2020-21 Panini NBA Hoops Basketball Mega Box">
                 <p class="product-title">
@@ -62,7 +68,7 @@
         </div>
 
         <!-- Product 3 -->
-        <div id="product-3">
+        <div class="product">
             <a href="product-1.html">
                 <img class="product-image" src="Images/Zion_Williamson_2019_Panini_Prizm_Rookie_248_1_350x500.png" alt="Zion Williamson 2019 Panini Prizm Rookie #248">
                 <p class="product-title">
@@ -75,7 +81,7 @@
         </div>
 
         <!-- Product 4 -->
-        <div id="product-4">
+        <div class="product">
             <a href="product-1.html">
                 <img class="product-image" src="Images/Michael_Jordan_1986_Fleer_Rookie_57_350x500.png" alt="Michael Jordan 1986 Fleer Rookie #57">
                 <p class="product-title">
@@ -97,7 +103,7 @@
     <div class="product-category-2">
 
         <!-- Product 1 -->
-        <div id="product-1">
+        <div class="product">
             <a href="product-1.html">
                 <img class="product-image" src="Images/2021_Topps_Heritage_Baseball_Hobby_Box.png" alt="2021 Topps Heritage Baseball Hobby Box">
                 <p class="product-title">
@@ -113,7 +119,7 @@
         </div>
 
         <!-- Product 2 -->
-        <div id="product-2">
+        <div class="product">
             <a href="product-1.html">
                 <img class="product-image" src="Images/2021_Topps_Inception_Baseball_Hobby_Box.png" alt="2021 Topps Inception Baseball Hobby Box">
                 <p class="product-title">
@@ -130,7 +136,7 @@
         </div>
 
         <!-- Product 3 -->
-        <div id="product-3">
+        <div class="product">
             <a href="product-1.html">
                 <img class="product-image" src="Images/Derek Jeter 1993 Topps Rookie.PNG" alt="Derek Jeter 1993 Topps Rookie #98">
                 <p class="product-title">
@@ -143,7 +149,7 @@
         </div>
 
         <!-- Product 4 -->
-        <div id="product-4">
+        <div class="product">
             <a href="product-1.html">
                 <img class="product-image" src="Images/Alex_Rodriguez_1994_Upper_Deck_SP_Rookie_Foil_15.PNG" alt="Alex Rodriguez 1994 Upper Deck SP Rookie Foil #15">
                 <p class="product-title">
