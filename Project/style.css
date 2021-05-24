@@ -1,9 +1,10 @@
 
 
     nav {
-        background-color: #026670;
+        background-color: black;
         padding: 15px 10px;
     }
+
     nav a {
         color: #edeae5;
         font-size: 1.15em;
@@ -12,6 +13,7 @@
         display: block;
         text-decoration: none;
     }
+    
     nav a:hover {
         color: white;
         text-decoration: underline;
